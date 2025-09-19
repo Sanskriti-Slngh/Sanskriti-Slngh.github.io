@@ -1,36 +1,106 @@
-/* Header Styling */
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #eaeaea;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4ecdc4;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
 header h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  letter-spacing: -2px;
-  color: white;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  color: #fff;
+  letter-spacing: -1px;
   animation: fadeInDown 1.2s ease forwards;
 }
 
-/* Intro Section */
+/* Intro text */
 .intro {
   max-width: 750px;
   margin: auto;
+  padding: 2rem;
   font-size: 1.1rem;
-  line-height: 1.8;
-  color: #cccccc;
-  animation: fadeIn 2s ease;
+  color: #ccc;
+  animation: fadeIn 1.6s ease;
 }
 
 .intro strong {
-  color: #ffffff;
+  color: #fff;
 }
 
 .intro em {
   color: #4ecdc4;
 }
 
-/* Navbar Active Link */
-nav a.active {
-  color: #4ecdc4;
-  font-weight: 600;
+/* Cards for projects */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 18px rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 0.9rem;
 }
 
 /* Animations */
