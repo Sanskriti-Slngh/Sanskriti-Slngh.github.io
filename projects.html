@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Sanskriti Singh</title>
+  <title>Projects & Research | Sanskriti Singh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,30 +15,95 @@
 
   <header>
     <h1>PROJECTS & RESEARCH.</h1>
+    <p>Selected publications, research projects, and independent ventures.</p>
   </header>
 
   <main>
     <div class="cards">
+
+      <!-- PneumoXttention -->
       <div class="card">
-        <h3>News-to-ArXiv Pipeline</h3>
-        <p>Maps live news to arXiv papers using embeddings, clustering, and LLM reasoning.</p>
+        <h3><a href="https://ieeexplore.ieee.org/document/9552171" target="_blank" style="color:#4ecdc4;">PneumoXttention</a></h3>
+        <p><em>IEEE ISPA 2021</em></p>
+        <p>A CNN ensemble for pneumonia detection in chest X-rays, designed to reduce human error. Validated against radiologists on RSNA & NIH datasets, achieving strong F1 scores.</p>
+        <p><strong>Mentors:</strong> Dr. Colin-Whitby Strevens · Dr. Sussane Soin</p>
       </div>
+
+      <!-- Coronary Calcium Scoring -->
       <div class="card">
-        <h3>Fraud Detection @ CSAIL</h3>
-        <p>Built Transformer & LSTM models on 1M+ records; boosted F1 with synthetic data.</p>
+        <h3><a href="https://ieeexplore.ieee.org/document/10002228" target="_blank" style="color:#4ecdc4;">Automated Coronary Calcium Scoring</a></h3>
+        <p><em>IEEE MIT URTC 2022</em></p>
+        <p>Developed a semi-supervised U-Net model to assess heart attack risk from non-gated CT scans. Improved mean absolute error by 91% and F1 score by 32% using cropping techniques.</p>
+        <p><strong>Mentors:</strong> Weicheng Dai · Ms. Kirti Tamhane</p>
       </div>
+
+      <!-- CheX-Nomaly -->
+      <div class="card">
+        <h3><a href="https://arxiv.org/abs/2311.01777" target="_blank" style="color:#4ecdc4;">CheX-Nomaly</a></h3>
+        <p><em>arXiv Preprint</em></p>
+        <p>Siamese U-Net model with contrastive learning to localize thoracic abnormalities across 14+ diseases. Focused on generalizability and reducing perceptual diagnostic errors.</p>
+        <p><strong>Mentors:</strong> Chenyu You · Ms. Swetha Bhattacharya</p>
+      </div>
+
+      <!-- Brain Tumor Segmentation -->
+      <div class="card">
+        <h3><a href="https://arxiv.org/abs/2204.01201" target="_blank" style="color:#4ecdc4;">Mask R-CNN for Brain Tumor Segmentation</a></h3>
+        <p><em>arXiv Preprint</em></p>
+        <p>Applied image subtraction with Mask R-CNN to segment heterogeneous brain tumors from MRIs. Achieved DICE coefficient of 0.75, outperforming standard baselines.</p>
+        <p><strong>Mentors:</strong> Dr. Sussane Soin · Ms. Sunita Gehlot</p>
+      </div>
+
+      <!-- False Negatives/Positives -->
+      <div class="card">
+        <h3><a href="https://arxiv.org/abs/2204.02526" target="_blank" style="color:#4ecdc4;">Minimization of False Negatives/Positives</a></h3>
+        <p><em>arXiv Preprint</em></p>
+        <p>Introduced a method for reducing false negatives/positives in binary classification by adjusting inputs post pre-training. Demonstrated improvements across multiple datasets.</p>
+        <p><strong>Mentor:</strong> Ms. Sujatha Raghu</p>
+      </div>
+
+      <!-- Water Consumption -->
+      <div class="card">
+        <h3><a href="https://github.com/Sanskriti-Slngh/waterconsumption" target="_blank" style="color:#4ecdc4;">Water Consumption Analysis</a></h3>
+        <p><em>Independent Project</em></p>
+        <p>Developed unsupervised ML models and distance algorithms (k-means, DTW) to estimate household water usage per appliance. Enables conservation and cost-saving insights.</p>
+        <p><strong>Mentors:</strong> Ms. Swetha Bhattacharya · Weicheng Dai</p>
+      </div>
+
+      <!-- News-to-ArXiv -->
+      <div class="card">
+        <h3>News–to–ArXiv Pipeline</h3>
+        <p><em>Independent Project, 2025–Present</em></p>
+        <p>Built a Python pipeline mapping 500+ news queries into arXiv search tasks. Uses LLMs and heuristics to retrieve top-10 relevant papers from 50k+ articles.</p>
+      </div>
+
+      <!-- Credit Card Fraud Detection -->
+      <div class="card">
+        <h3>Credit Card Fraud Detection</h3>
+        <p><em>MIT CSAIL · Prof. Amar Gupta</em></p>
+        <p>Designed and trained LSTM and Transformer models on 1M+ transactions. Enhanced training diversity with synthetic data, boosting F1 by ~12%.</p>
+      </div>
+
+      <!-- O-Health Symptom Extractor -->
       <div class="card">
         <h3>O-Health Symptom Extractor</h3>
-        <p>Classifies 50,000+ patient symptoms to specialties using clustering.</p>
+        <p><em>MIT CSAIL · Prof. Amar Gupta</em></p>
+        <p>Processed 50k+ patient records with unsupervised ML to classify symptoms and identify relevant medical specializations. Achieved >60% accuracy.</p>
       </div>
+
+      <!-- Kognitos Internship -->
       <div class="card">
-        <h3>GANs for Eovist MRI</h3>
-        <p>Teacher-student GAN improves DICE by 23% on liver tumors. Work at Yale IO Lab.</p>
+        <h3><a href="https://www.kognitos.com/" target="_blank" style="color:#4ecdc4;">Kognitos Engineering Internship</a></h3>
+        <p><em>Summer 2025</em></p>
+        <p>Built automated pipelines using LLMs and regex heuristics to improve error messaging. Reduced customer wait times by 89% and achieved 99% structural match accuracy.</p>
       </div>
+
+      <!-- Cardiovascular Embeddings -->
       <div class="card">
-        <h3>CheX-Nomaly</h3>
-        <p>Siamese U-Net for thoracic abnormality localization. Published on arXiv.</p>
+        <h3>Cardiovascular Disease Embeddings</h3>
+        <p><em>MIT CSAIL · Prof. Manolis Kellis</em></p>
+        <p>Developed personalized latent space embeddings on 6000+ patient records for improved cardiovascular disease analysis and risk modeling.</p>
       </div>
+
     </div>
   </main>
 
