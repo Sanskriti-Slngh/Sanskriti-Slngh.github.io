@@ -1,56 +1,99 @@
+/* Reset + base style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    background-color: #007acc;
-    color: white;
-    padding: 1em;
-    text-align: center;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: white;
+}
+
+header p {
+  color: #cccccc;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Navigation */
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #005f99;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
-    color: white;
-    padding: 1em;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #003f66;
+  color: #4ecdc4;
 }
 
+/* Main content */
 main {
-    padding: 2em;
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    margin-top: 1em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
 }
 
-h1, h2 {
-    color: #007acc;
+/* Card layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-ul {
-    line-height: 1.6;
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.card h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #007acc;
-    color: white;
-    margin-top: 2em;
+  text-align: center;
+  padding: 2rem;
+  color: #555;
 }
