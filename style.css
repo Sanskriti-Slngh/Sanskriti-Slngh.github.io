@@ -1,99 +1,45 @@
-/* Reset + base style */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #0d0d0d;
-  color: #ffffff;
-  font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
+/* Header Styling */
 header h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -2px;
   color: white;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  animation: fadeInDown 1.2s ease forwards;
 }
 
-header p {
+/* Intro Section */
+.intro {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
   color: #cccccc;
-  font-size: 1.2rem;
-  margin-top: 1rem;
+  animation: fadeIn 2s ease;
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #1a1a1a;
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.intro strong {
+  color: #ffffff;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1.5rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
+.intro em {
   color: #4ecdc4;
 }
 
-/* Main content */
-main {
-  padding: 3rem 2rem;
-  max-width: 1100px;
-  margin: auto;
+/* Navbar Active Link */
+nav a.active {
+  color: #4ecdc4;
+  font-weight: 600;
 }
 
-/* Card layout */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.card {
-  background-color: #1a1a1a;
-  border: 1px solid #333;
-  padding: 1.5rem;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
-}
-
-.card h3 {
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-}
-
-.card p {
-  color: #aaaaaa;
-  font-size: 0.95rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #555;
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
